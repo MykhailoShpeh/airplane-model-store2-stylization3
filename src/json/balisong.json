@@ -1,0 +1,55 @@
+[
+    {
+        "nameOfKnife": "CK-SR Balisong Trainer",
+        "brand": "ARMED SHARK",
+        "price": "$218 USD",
+        "typeOfKnife": "trainer",
+        "image": "../images/1.png",
+        "materials": [
+            "440C Steel,",
+            "Titanium"
+        ],
+        "link": "https://armedshark.com/products/armed-shark-ck-sr-balisong-trainer-butterfly-knife",
+        "weight": "About 123 g",
+        "accessories": "Practice trainer, Repair kit, Pouch, Presentation box, Flipping tutorial"
+    },
+    {
+        "nameOfKnife": "TOUCH TIMES Kraken V3 Trainer Clone",
+        "brand": "Balisong Butterfly Knife Store",
+        "price": "$25 USD",
+        "typeOfKnife": "trainer",
+        "image": "../images/2.png",
+        "materials": [
+            "6061 Aluminium"
+        ],
+        "link": "https://www.aliexpress.com/item/1005006755743121.html?spm=a2g0o.order_list.order_list_main.5.92a31802Pv2kVs",
+        "weight": "About 110 g",
+        "accessories": "Repair kit, Pouch"
+    },
+    {
+        "nameOfKnife": "Squiddy",
+        "brand": "Squid Industries",
+        "price": "$50 USD",
+        "typeOfKnife": "trainer",
+        "image": "../images/3.png",
+        "materials": [
+            "CPVC (Plastic)"
+        ],
+        "link": "http://squidindustries.co/products/squiddy",
+        "weight": "About 70.8 g",
+        "accessories": false
+    },
+    {
+        "nameOfKnife": "Matte DLC Tsunami",
+        "brand": "Squid Industries",
+        "price": "$875 USD",
+        "typeOfKnife": "trainer",
+        "image": "../images/Full_DLC_Tsunami.webp",
+        "materials": [
+            "Titanium"
+        ],
+        "link": "https://squidindustriesknives.co/products/dlc-tsunami",
+        "weight": "About 113 g",
+        "accessories": "Practice trainer, Repair kit, Pouch, Presentation box, Flipping tutorial"
+    }
+]
