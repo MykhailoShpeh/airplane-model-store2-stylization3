@@ -1,19 +1,22 @@
 import PropTypes from 'prop-types';
 
+import css from "./PlanesList.module.css";
+
 import { Planes } from '@/components/Planes/Planes.jsx'; 
 
-import { getBgColor } from '@/utils/getBackgroundColor.js';
+import { getBgColorCSSModule } from '@/utils/getBackgroundColor.js';
 
 
 //! Для визначення кольору фону картки в залежності від значення "year"
 
 export function PlanesList({ items }) {
+    console.log(getBgColorCSSModule(2000))
     return (
         <ul
-            className='list'>
+            className={css.list}>
             {items.map(item =>
                 <li
-                    className={getBgColor(item.info.year)}
+                    className={css[getBgColorCSSModule(item.info.year)]}
                     key={item.id} >
                     <Planes
                         urlMain={item.url.main}

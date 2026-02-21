@@ -5,15 +5,15 @@
     color: darkred;
 }
 
-.lugrasimoBold {
-    font-family: "Lugrasimo", cursive;
+.robotoBold {
+    font-family: "Roboto", cursive;
     font-weight: 700;
     font-style: normal;
     color: darkgreen;
 }
 
-.titleLugrasimoBold {
-    composes: lugrasimoBold;
+.titleRobotoBold {
+    composes: robotoBold;
     margin-bottom: 24px;
     font-size: 48px;
     text-align: center;

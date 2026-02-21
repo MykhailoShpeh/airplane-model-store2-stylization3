@@ -1,44 +1,6 @@
 
 
-.list {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
-  gap: 32px;
-  outline: 1px solid red;
-}
 
-.item {
-  display: grid;
-  gap: 12px;
-  padding: 10px;
-  /* year до 1946 */
-  background-color: #ffdb92;
-  /* backgroundColor: '#d2fdbd'; // year  1946 - 1999
-           backgroundColor: '#d6f1ff'; // year від 2000 */
-  /* backgroundColor: getBgColor(item.info.year); */
-  outline: 1px solid grey;
-}
-
-/** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
-.item.last {
-  background-color: #d2fdbd;
-}
-
-/** backgroundColor: '#d6f1ff', // "year" від 2000 - current */
-.item.current {
-  background-color: #d6f1ff;
-}
-
-/* .item.last {
-  background-color: #d2fdbd;
-}
-
-.item.last.current {
-  background-color: #d6f1ff;
-} */
 
 .textField {
   font-size: 18px;
