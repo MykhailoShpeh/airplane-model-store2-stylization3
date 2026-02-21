@@ -1,31 +1,5 @@
 
 
-
-.title {
-  margin-bottom: 24px;
-  font-size: 48px;
-  text-align: center;
-  color: darkred;
-}
-
-.lugrasimoBold {
-  font-family: "Lugrasimo", cursive;
-  font-weight: 700;
-  font-style: normal;
-  color: darkgreen;
-}
-
-.titleLugrasimoBold {
-  font-family: "Lugrasimo", cursive;
-  font-weight: 700;
-  font-style: normal;
-  /* composes: lugrasimoBold; */
-  margin-bottom: 24px;
-  font-size: 48px;
-  text-align: center;
-  color: darkred;
-}
-
 .list {
   margin-left: 10px;
   margin-right: 10px;
