@@ -1,25 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from "@/components/default.png"; //! Дефолтне зображення
-
-
-//! Стилі для текстових полів
-const textField = {
-    // fontSize: '18px',
-    // fontWeight: 700,
-}
-
-//! Стилі для значень текстових полів
-const textFieldValue = {
-    // fontWeight: 400,
-    // fontStyle: "italic",
-}
-
-//! Стилі для заголовків зображень
-const imageTitles = {
-    // textAlign: 'center',
-    // color: 'blue'
-}
-
+import css from './Planes.module.css';
 
 export function Planes({
     urlMain = defaultImage, //! Дефолтне зображення
@@ -40,79 +21,34 @@ export function Planes({
     return (
         <>
             <h3
-                className='planeTitle'
-                // style={{
-                    // marginBottom: 12,
-                    // padding: "12px 16px",
-                    // fontSize: "32px",
-                    // textAlign: 'center',
-                    // borderRadius: 8,
-                    // backgroundColor: "yellow",
-                    // color: "blue",
-                // }}
-            >
+                className={css.planeTitle}>
                 {nameBrief}
             </h3>
             <img src={urlMain} alt={nameBrief} />
-            <p className='textField'>Повна назва: <span className='textFieldValue'>{nameFull}</span></p>
-            <p className='textField'>Тип: <span className='textFieldValue'>{type}</span></p>
-            <p className='textField'>Прізвисько: <span className='textFieldValue'>{nickname}</span></p>
-            <p className='textField'>Країна виробник: <span className='textFieldValue'>{country}</span></p>
-            <p className='textField'>Рік випуску: <span className='textFieldValue'>{year}</span></p>
-            <p className='textField'>Ціна: <span className='textFieldValue'>{price}</span></p>
-            <p className='textField'>Опис: <span className='textFieldValue'>{description}</span></p>
-            {/*//! заголовок зображень */}
-            {/* <h4 style={{ textAlign: 'center', color: 'blue' }}>Рекламна модель:</h4> */}
-            <h4 className='imageTitles'>Рекламна модель:</h4>
+            <p className={css.textField}>Повна назва: <span className={css.textFieldValue}>{nameFull}</span></p>
+            <p className={css.textField}>Тип: <span className={css.textFieldValue}>{type}</span></p>
+            <p className={css.textField}>Прізвисько: <span className={css.textFieldValue}>{nickname}</span></p>
+            <p className={css.textField}>Країна виробник: <span className={css.textFieldValue}>{country}</span></p>
+            <p className={css.textField}>Рік випуску: <span className={css.textFieldValue}>{year}</span></p>
+            <p className={css.textField}>Ціна: <span className={css.textFieldValue}>{price}</span></p>
+            <p className={css.textField}>Опис: <span className={css.textFieldValue}>{description}</span></p>
+            <h4 className={css.imageTitles}>Рекламна модель:</h4>
             <img src={urlPromotional} alt={nameBrief} />
-            {/*//! заголовок зображень */}
-            {/* <h4 style={{ textAlign: 'center', color: 'blue' }}>Реальна модель:</h4> */}
-            <h4 className='imageTitles'>Реальна модель:</h4>
-            {/* <img src={urlActual} alt={nameBrief} width="600" /> */}
+            <h4 className={css.imageTitles}>Реальна модель:</h4>
             <div
-                className='imgBox'
-                // style={{
-                    // display: "flex",
-                    // gap: 10,
-                    // flexWrap: 'wrap',
-                    // padding: "8px",
-                    // borderRadius: 8,
-                    // backgroundColor: "gray",
-                // }}
-            >
+                className={css.imgBox}>
                 {urlActual.map(item =>
                     <img
                         // key={item} //! поки що не унікальний
                         src={item}
                         alt={nameBrief}
-                        className='img'
-                        // style={{
-                        //     maxWidth: "calc((100% - 10px) / 2)",
-                        //     borderRadius: 4,
-                        // }}
+                        className={css.img}
                     />
                 )}
             </div>
             <button
-                className='but'
-                type="button"
-                // style={{
-                    // width: "70%",
-                    // margin: "20px auto",
-                    // padding: "16px 32px",
-                    // display: "inline-block",
-                    // alignItems: "center",
-                    // fontFmily: 'Franklin Gothic Medium, Arial Narrow',
-                    // fontWeight: 700,
-                    // fontSize: "1.5rem",
-                    // borderRadius: "12px",
-                    // color: "#ffffff",
-                    // cursor: "pointer",
-                    // backgroundColor: "#008080",
-                    // textShadow: "1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1)",
-                    // boxShadow: "inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9)",
-                // }}
-            >
+                className={css.but}
+                type="button">
                 Додати до кошику
             </button>
         </>
