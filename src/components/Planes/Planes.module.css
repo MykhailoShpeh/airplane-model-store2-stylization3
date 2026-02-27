@@ -3,6 +3,12 @@
     font-weight: 700;
 }
 
+.icon {
+    margin-bottom: -8px;
+    margin-right: 5px;
+    color: #9b25fc;
+}
+
 .textFieldValue {
     font-weight: 400;
     font-style: italic;

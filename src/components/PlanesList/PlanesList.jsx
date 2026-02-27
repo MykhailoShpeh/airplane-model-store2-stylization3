@@ -26,6 +26,8 @@ export function PlanesList({ items }) {
                         nameFull={item.name.full}
                         nickname={item.name.nickname}
                         year={item.info.year}
+                        startTime={item.manufacturing.start}
+                        endTime={item.manufacturing.end}
                         country={item.info.country}
                         type={item.info.type}
                         price={item.info.price}
