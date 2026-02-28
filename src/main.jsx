@@ -6,7 +6,7 @@ import { App } from '@/components/App/App.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/airplane-model-store2-stylization2">
+    <BrowserRouter basename="/airplane-model-store2-stylization3">
       <App />
     </BrowserRouter>
   </StrictMode >
